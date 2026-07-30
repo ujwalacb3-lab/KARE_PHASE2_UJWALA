@@ -1,0 +1,43 @@
+class Main{
+    public static void main(String args[]){
+        System.out.print("\\n");
+    }
+}
+
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        System.out.print(N);
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        float N = sc.nextFloat();
+        System.out.print(N);
+    }
+}
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        float f = sc.nextFloat();
+        System.out.printf("%.2f", f);
+    }
+}
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double x = sc.nextDouble();
+        System.out.print(x);
+    }
+}
