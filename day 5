@@ -1,0 +1,86 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int c=0;
+        while(n!=0)
+        {
+            n=n/10;
+            c++;
+        }
+        System.out.print("No.of.digits: "+c);
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int d,ans=0;
+        while(n!=0)
+        {
+            d=n%10;
+            ans=ans*10+d;
+            n=n/10;
+        }
+        System.out.print("reverse value: "+ans);
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int temp=n,d,rev=0;
+        while(n!=0)
+        {
+            d=n%10;
+            rev=rev*10+d;
+            n=n/10;
+        }
+        if(temp==rev)
+        System.out.print("Palindrome Number");
+        else
+        System.out.print("Not a palindrome Number");
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int ec=0,oc=0,d;
+        while(n!=0)
+        {
+            d=n%10;
+            if(d%2==0)
+            ec++;
+            else
+            oc++;
+            n=n/10;
+        }
+        System.out.print("Odd digit count:"+oc);
+        System.out.print("Even digit count:"+ec);
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int c=0,d;
+        while(n!=0)
+        {
+            d=n%10;
+            if(d==2||d==3||d=5||d==7)
+            c++;
+            n=n/10;
+        }
+        System.out.print("Prime digit count:"+c);
+    }
+}
