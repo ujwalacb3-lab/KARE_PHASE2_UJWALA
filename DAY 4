@@ -1,0 +1,113 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        switch(n)
+        {
+            Case 1:
+                System.out.print("CSE");
+                break;
+            Case 2:
+                System.out.print("ECE");
+                break;
+            Case 3:
+                System.out.print("EEE");
+                break;
+            default:
+                System.out.print("Invalid")
+            
+        }
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        char c = sc.next().CharAt(0);
+        switch(c)
+        {
+            Case '+':
+                System.out.print(a + b);
+                break;
+            Case '-':
+                System.out.print(a - b);
+                break;
+            Case '*':
+                System.out.print(a * b);
+                break;
+            Case '/':
+                System.out.print(a / b);
+                break;
+            Case '%';
+                System.out.print(a % b);
+                break;
+            default:
+                System.out.print("Invalid")
+            
+        }
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i;
+        for(i=1;i<=n;i++)
+        System.out.print(i+" ";)
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int i,sum = 0;
+        for(i=1;i<=n;i++)
+        sum += i;
+        System.out.print(sum);
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i;
+        for(i=1;i<=n;i++)
+        System.out.print(i);
+        System.out.print(n);
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i;
+        for(i=1;i<=n;i++)
+        fact = fact*i
+        System.out.print(fact+" ");
+    }
+}
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int i;
+        for(i=1;i<=n;i++)
+        fact = fact*i
+        System.out.print("%d  * %d = %d\n");
+    }
+}
