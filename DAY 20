@@ -1,0 +1,273 @@
+1
+// INBUILT METHODS
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     ArrayList obj = new ArrayList();
+     obj.add(10);
+     obj.add(20);
+     obj.add(30);
+     obj.add(2.5);
+     obj.add('c');
+     obj.add("abc");
+     System.out.print(obj);
+    }
+}
+
+2
+// INBUILT METHODS ONLY INTEGER VALUES
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     ArrayList<Integer> obj = new ArrayList<Integer>();
+     obj.add(10);
+     obj.add(20);
+     obj.add(30);
+     obj.add(25);
+     obj.add(75);
+     obj.add(100);
+     System.out.print(obj);
+    }
+}
+
+3
+// ARRAYLIST USING USER INPUT
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     ArrayList<Integer> obj = new ArrayList<Integer>();
+     Scanner s = new Scanner(System.in);
+     int n = s.nextInt();
+     int i;
+     for(i=0;i<n;i++)
+     obj.add(s.nextInt());
+     System.out.print(obj);
+    }
+}
+
+4
+// LINKEDLIST WITH INBUILT METHODS
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     LinkedList obj = new LinkedList();
+     obj.add(10);
+     obj.add(20);
+     obj.add(30);
+     System.out.print(obj);
+    }
+}
+
+5
+// LINKEDLIST WITH INBUILT METHODS
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     LinkedList obj = new LinkedList();
+     int i;
+     Scanner sc = new Scanner(System.in);
+     int n = sc.nextInt();
+     for(i=0;i<n;i++)
+     obj.add(sc.nextInt());
+     System.out.print("LinkedList Elements");
+     System.out.println(obj);
+     int ind = sc.nextInt();
+     int val = sc.nextInt();
+     obj.add(ind,val);
+     System.out.println(obj);
+     System.out.println("Insert first position");
+     System.out.println("Enter first element to be add");
+     int d = sc.nextInt();
+     obj.addFirst(d);
+     System.out.print(obj);
+     System.out.println("Insert last position");
+     System.out.println("Enter last element to be add");
+     d = sc.nextInt();
+     obj.addLast(d);
+     System.out.print(obj);
+    }
+}
+
+6
+// LINKEDLIST WITH INBUILT METHODS
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+     LinkedList obj = new LinkedList();
+     int i;
+     Scanner sc = new Scanner(System.in);
+     int n = sc.nextInt();
+     for(i=0;i<n;i++)
+     obj.add(sc.nextInt());
+     System.out.print("LinkedList Elements");
+     System.out.println(obj);
+     int ind = sc.nextInt();
+     int val = sc.nextInt();
+     obj.add(ind,val);
+     System.out.println(obj);
+     System.out.println("Insert first position");
+     System.out.println("Enter first element to be add");
+     int d = sc.nextInt();
+     obj.addFirst(d);
+     System.out.print(obj);
+     System.out.println("Insert last position");
+     System.out.println("Enter last element to be add");
+     d = sc.nextInt();
+     obj.addLast(d);
+     System.out.print(obj);
+     obj.clear();
+     System.out.println(obj);
+    }
+}
+
+7
+// LINKEDLIST WITH INBUILT METHODS
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        LinkedList<Integer> obj = new LinkedList<>();
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            obj.add(sc.nextInt());
+        }
+        System.out.println("LinkedList: " + obj);
+        int ind = sc.nextInt();
+        int val = sc.nextInt();
+        obj.add(ind, val);
+        System.out.println("After add(index,value): " + obj);
+        int d = sc.nextInt();
+        obj.addFirst(d);
+        System.out.println("After addFirst: " + obj);
+        d = sc.nextInt();
+        obj.addLast(d);
+        System.out.println("After addLast: " + obj);
+        ind = sc.nextInt();
+        System.out.println("get: " + obj.get(ind));
+        System.out.println("getFirst: " + obj.getFirst());
+        d = sc.nextInt();
+        obj.remove(Integer.valueOf(d));
+        System.out.println("After remove(value): " + obj);
+        ind = sc.nextInt();
+        obj.remove(ind);
+        System.out.println("After remove(index): " + obj);
+        obj.removeFirst();
+        System.out.println("After removeFirst: " + obj);
+        obj.removeLast();
+        System.out.println("After removeLast: " + obj);
+        d = sc.nextInt();
+        System.out.println("Contains " + d + ": " + obj.contains(d));
+        System.out.println("Size: " + obj.size());
+        System.out.println("Is Empty: " + obj.isEmpty());
+        obj.clear();
+        System.out.println("After clear: " + obj);
+        System.out.println("Is Empty: " + obj.isEmpty());
+    }
+}
+
+8
+// ARRAYLIST USING INBUILT METHODS
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> obj = new ArrayList<Integer>();
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        for (int i = 0; i < n; i++)
+            obj.add(s.nextInt());
+        System.out.println("ArrayList: " + obj);
+        int index = s.nextInt();
+        int value = s.nextInt();
+        obj.add(index, value);
+        System.out.println("After add: " + obj);
+        index = s.nextInt();
+        System.out.println("get: " + obj.get(index));
+        index = s.nextInt();
+        value = s.nextInt();
+        obj.set(index, value);
+        System.out.println("After set: " + obj);
+        index = s.nextInt();
+        obj.remove(index);
+        System.out.println("After remove: " + obj);
+        System.out.println("Size: " + obj.size());
+        value = s.nextInt();
+        System.out.println("Contains: " + obj.contains(value));
+        value = s.nextInt();
+        System.out.println("IndexOf: " + obj.indexOf(value));
+        value = s.nextInt();
+        System.out.println("LastIndexOf: " + obj.lastIndexOf(value));
+        ArrayList<Integer> removeList = new ArrayList<Integer>();
+        int r = s.nextInt();
+        for (int i = 0; i < r; i++)
+            removeList.add(s.nextInt());
+        obj.removeAll(removeList);
+        System.out.println("After removeAll: " + obj);
+        ArrayList<Integer> retainList = new ArrayList<Integer>();
+        int x = s.nextInt();
+        for (int i = 0; i < x; i++)
+            retainList.add(s.nextInt());
+        obj.retainAll(retainList);
+        System.out.println("After retainAll: " + obj);
+        System.out.println("Is Empty: " + obj.isEmpty());
+        obj.clear();
+        System.out.println("After clear: " + obj);
+        System.out.println("Is Empty: " + obj.isEmpty());
+    }
+}
+
+9
+// STACK USING INBUILT METHODS
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Stack<Integer> obj = new Stack<Integer>();
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        for (int i = 0; i < n; i++)
+            obj.push(s.nextInt());
+        System.out.println("Stack: " + obj);
+        int value = s.nextInt();
+        obj.push(value);
+        System.out.println("After push: " + obj);
+        System.out.println("Peek: " + obj.peek());
+        obj.pop();
+        System.out.println("After pop: " + obj);
+        value = s.nextInt();
+        System.out.println("Search: " + obj.search(value));
+        value = s.nextInt();
+        System.out.println("Contains: " + obj.contains(value));
+        System.out.println("Size: " + obj.size());
+        System.out.println("Is Empty: " + obj.isEmpty());
+        obj.clear();
+        System.out.println("After clear: " + obj);
+        System.out.println("Is Empty: " + obj.isEmpty());
+    }
+}
+
+10
+// STACK USING INBUILT METHODS
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Stack<Integer> obj = new Stack<Integer>();
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        for (int i = 0; i < n; i++)
+            obj.add(s.nextInt());
+        System.out.println("Stack: " + obj);
+        int index = s.nextInt();
+        int value = s.nextInt();
+        obj.add(index, value);
+        System.out.println("After add: " + obj);
+        index = s.nextInt();
+        System.out.println("Get: " + obj.get(index));
+        index = s.nextInt();
+        value = s.nextInt();
+        obj.set(index, value);
+        System.out.println("After set: " + obj);
+        index = s.nextInt();
+        obj.remove(index);
+        System.out.println("After remove: " + obj);
+        System.out.println("Empty: " + obj.empty());
+    }
+}
